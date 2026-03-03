@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- länk till CSS och typsnitt -->
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titel och favicon -->
+    <title>Nexora</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="icon" type="image/png" href="../bilder/nex.png">
+    
+    <!-- styling -->
+    <style>
+        body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                margin: 0;
+                background-color: #000;
+                font-family: 'Saira', sans-serif;
+                font-size: 1.1rem; /* scales font up */
+            }
+            #main {
+                flex: 1;
+            }
+    </style>
+</head>
+<body>
+
+
+
+
+      
+      <div id="main">
+  <!-- Bild på nexora loggan -->
+        <div class="w3-container">
+            <img src="../bilder/nex.png" alt="nex" class="w3-image" width="300px" height="500px">
+      </div>
+        
+
+
+<!-- Navbar -->
+      <div class="w3-bar w3-black">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="faq.html" class="w3-bar-item w3-button">FAQ</a>
+        <a href="signup.html" class="w3-bar-item w3-button w3-right">Signup</a>
+        <a href="login.html" class="w3-bar-item w3-button w3-right w3-green">Login</a>
+        <div class="w3-dropdown-hover">
+          <!-- dropdown category meny -->
+            <button class="w3-button">Category</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-black w3-text-white">
+            <a href="fps.html" class="w3-bar-item w3-button">FPS</a>
+            <a href="horror.html" class="w3-bar-item w3-button">Horror</a>
+            <a href="rpg.html" class="w3-bar-item w3-button">RPG</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Titel -->
+    <h1 id="1" class="w3-center w3-xxlarge w3-text-white w3-padding-32 w3-opacity w3-black" style="letter-spacing: 4px; border-radius: 8px;">
+        Login
+    </h1>
+
+  
+
+
+<!-- Huvudinnehåll -->
+<div>
+
+
+    <!-- Login formuläret -->
+    <div class="login-container">
+        <h2 class="w3-text-white w3-center w3-large">Login</h2>
+        <form id="login-form">
+
+            <!-- Email -->
+            <div class="input-group">
+                <label for="email">Email <span style="color: red">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Lösenord -->
+            <div class="input-group">
+                <label for="password">Password <span style="color: red">*</span></label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Logga in knappen -->
+            <button type="submit" class="login-button">Login</button>
+        </form>
+
+        <!-- Knapp för att ta dig till signup sidan ifall man inte har konto -->
+        <p class="signup-link">Don't have an account? <a href="signup.html">Sign up here</a></p>
+    </div>
+
+      </p>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+<!-- Footer med kontaktinformation -->
+<footer class="w3-container w3-black w3-padding-16 w3-center">
+    <div class="w3-row-padding w3-small">
+      <div class="w3-col s6 m3">
+        <p><strong>Nexora Inc.</strong></p>
+      </div>
+      <div class="w3-col s6 m3">
+        <p>Updated: May 15, 2025</p>
+      </div>
+      <div class="w3-col s6 m3">
+        <p>Email: support@nexora.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+      </div>
+      <div class="w3-col s6 m3">
+        <p>42 Pixel St, Cyber City, CA</p>
+      </div>
+    </div>
+    <hr style="width:80%; margin:auto; border-color: #555;">
+    <p class="w3-small">&copy; 2025 Nexora. All rights reserved. </p>
+  </footer>
+  
+<!-- länk till javascript där det hanterar sidan login -->
+<script src="../js/login.js"></script>
+
+</body>
+</html>
